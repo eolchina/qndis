@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/Cellar/node/9.10.0_1/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js install --no-bin-links
+
+PATH: 
+  /Users/lisong/.rvm/gems/ruby-2.4.2/bin:/Users/lisong/.rvm/gems/ruby-2.4.2@global/bin:/Users/lisong/.rvm/rubies/ruby-2.4.2/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/ncbi/blast/bin:/opt/X11/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/lisong/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.10.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+      "private": true,
+      "scripts": {
+          "dev": "npm run development",
+          "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+          "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+          "watch-poll": "npm run watch -- --watch-poll",
+          "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+          "prod": "npm run production",
+          "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+      },
+      "devDependencies": {
+          "axios": "^0.17",
+          "bootstrap-sass": "^3.3.7",
+          "cross-env": "^5.1",
+          "jquery": "^3.2",
+          "laravel-mix": "^1.0",
+          "lodash": "^4.17.4",
+          "vue": "^2.5.7"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find package "run-queue@^1.0.0" required by "copy-concurrently@^1.0.0" on the "npm" registry.
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at PackageRequest.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:36274:17)
+      at Generator.throw (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:111:13
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:118:7)
